@@ -41,28 +41,10 @@ class PaginatedListViewModel extends StateNotifier<PaginatedListState> {
         );
       }
 
-      _applySearchQuery(state.searchQuery); 
     } catch (e) {
       state = state.copyWith(error: 'Failed to fetch items.');
     } finally {
       state = state.copyWith(isLoading: false);
-    }
-  }
-
-  void updateSearchQuery(String query) {
-    state = state.copyWith(searchQuery: query);
-    _applySearchQuery(query);
-  }
-
-  void _applySearchQuery(String query) {
-    if (query.isEmpty) {
-      state = state.copyWith(filteredItems: state.items);
-    } else {
-      final filteredItems = state.items
-          .where(
-              (item) => item.title.toLowerCase().contains(query.toLowerCase()))
-          .toList();
-      state = state.copyWith(filteredItems: filteredItems);
     }
   }
 }
@@ -75,7 +57,6 @@ class PaginatedListState {
   final bool hasMoreUp;
   final bool hasMoreDown;
   final bool isLoading;
-  final String searchQuery;
   final String error;
 
   PaginatedListState({
@@ -86,7 +67,6 @@ class PaginatedListState {
     this.hasMoreUp = true,
     this.hasMoreDown = true,
     this.isLoading = false,
-    this.searchQuery = '',
     this.error = '',
   });
 
@@ -98,7 +78,6 @@ class PaginatedListState {
     bool? hasMoreUp,
     bool? hasMoreDown,
     bool? isLoading,
-    String? searchQuery,
     String? error,
   }) {
     return PaginatedListState(
@@ -109,7 +88,6 @@ class PaginatedListState {
       hasMoreUp: hasMoreUp ?? this.hasMoreUp,
       hasMoreDown: hasMoreDown ?? this.hasMoreDown,
       isLoading: isLoading ?? this.isLoading,
-      searchQuery: searchQuery ?? this.searchQuery,
       error: error ?? this.error,
     );
   }
