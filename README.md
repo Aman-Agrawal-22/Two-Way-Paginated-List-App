@@ -51,7 +51,7 @@ Feel free to fork this repository and modify it as per your needs. Contributions
 For any questions or suggestions, feel free to open an issue or reach out directly.
 
 ---
-Made with ❤️ by [Aman Agrawal]([https://github.com/yourgithubusername](https://github.com/Aman-Agrawal-22))
+Made with ❤️ by [Aman Agrawal]([https://github.com/Aman-Agrawal-22])
 
 
 
