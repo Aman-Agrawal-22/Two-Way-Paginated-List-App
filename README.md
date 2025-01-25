@@ -5,7 +5,6 @@ A Flutter app that implements a paginated list with infinite scrolling, and shim
 ## Features
 
 - **Infinite Scroll**: Load more items dynamically when the user scrolls to the top or bottom.
-- **Search Bar**: Filter items by typing a search query.
 - **Shimmer Effect**: A custom shimmer loading effect while data is being fetched.
 - **State Management**: Uses `flutter_riverpod` to manage the state of the list and the search query.
 
@@ -39,5 +38,20 @@ flutter run
   
 - `shimmer`: For shimmer loading effects.
   - [shimmer on pub.dev](https://pub.dev/packages/shimmer)
+
+## Conclusion
+
+This Flutter application demonstrates a paginated list view with dynamic fetching of data and seamless scrolling. It integrates state management using `flutter_riverpod` and custom loading effects using the `shimmer` package to provide a smooth user experience. The search functionality allows users to filter items while maintaining the pagination logic.
+
+Feel free to fork this repository and modify it as per your needs. Contributions are welcome!
+
+
+## Contact
+
+For any questions or suggestions, feel free to open an issue or reach out directly.
+
+---
+Made with ❤️ by [Aman Agrawal]([https://github.com/yourgithubusername](https://github.com/Aman-Agrawal-22))
+
 
 
