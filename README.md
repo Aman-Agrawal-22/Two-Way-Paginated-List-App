@@ -21,3 +21,23 @@ A Flutter app that implements a paginated list with infinite scrolling, and shim
 ```bash
 git clone https://github.com/Aman-Agrawal-22/Two-Way-Paginated-List-App.git
 ```
+
+### 2. Install dependencies
+```bash
+flutter pub get
+```
+
+### 3. Run the app
+```bash
+flutter run
+```
+
+## Packages Used
+
+- `flutter_riverpod`: For state management.
+  - [flutter_riverpod on pub.dev](https://pub.dev/packages/flutter_riverpod)
+  
+- `shimmer`: For shimmer loading effects.
+  - [shimmer on pub.dev](https://pub.dev/packages/shimmer)
+
+
